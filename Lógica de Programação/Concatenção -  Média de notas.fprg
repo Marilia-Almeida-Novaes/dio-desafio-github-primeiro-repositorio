@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joatan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-11 01:09:54 "/>
+        <attribute name="created" value="am9hdGFuO0RFU0tUT1AtMTk3STI5VDsyMDIyLTA0LTExOyIwODo1Mjo1NSAiOzI4Mzc="/>
+        <attribute name="edited" value="am9hdGFuO0RFU0tUT1AtMTk3STI5VDsyMDIyLTA0LTExOyIwMTowOTo1NCAiOzM7Mjk0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nota1, Nota2, Nota3, Nota4, Media" type="Real" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Digite seu nome completo: &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Infome sua primeira prova: &quot;" newline="True"/>
+            <input variable="Nota1"/>
+            <output expression="&quot;Infome sua segunda prova: &quot;" newline="True"/>
+            <input variable="Nota2"/>
+            <output expression="&quot;Infome sua terceira prova: &quot;" newline="True"/>
+            <input variable="Nota3"/>
+            <output expression="&quot;Infome sua quarta prova: &quot;" newline="True"/>
+            <input variable="Nota4"/>
+            <assign variable="Media" expression="(Nota1+Nota2+Nota3+Nota4)/4"/>
+            <output expression="&quot;Pronto&quot;" newline="True"/>
+            <output expression="nome &amp; &quot; sua media &#233;: &quot; &amp; Media" newline="True"/>
+            <if expression="Media&gt;= 7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns voc&#234; foi aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Lamento, voc&#234; foi reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
